@@ -17,48 +17,48 @@ A Patient Information Management System typically includes several modules that 
 7. Security and Access Control Module: This module provides security features to ensure patient data is protected, including access control, data encryption, and user authentication.
 
 ## Note that the specific modules included in a Patient Information Management System may vary depending on the needs of the healthcare provider and the system requirements. Additionally, some modules may be combined or integrated with others depending on the specific functionality required.
-pims/
-├── accounts/
-│   ├── __init__.py
-│   ├── admin.py
-│   ├── apps.py
-│   ├── models.py
-│   ├── tests.py
-│   ├── urls.py
-│   └── views.py
-├── appointments/
-│   ├── __init__.py
-│   ├── admin.py
-│   ├── apps.py
-│   ├── models.py
-│   ├── tests.py
-│   ├── urls.py
-│   └── views.py
-├── prescriptions/
-│   ├── __init__.py
-│   ├── admin.py
-│   ├── apps.py
-│   ├── models.py
-│   ├── tests.py
-│   ├── urls.py
-│   └── views.py
-├── reports/
-│   ├── __init__.py
-│   ├── admin.py
-│   ├── apps.py
-│   ├── models.py
-│   ├── tests.py
-│   ├── urls.py
-│   └── views.py
-├── static/
-│   └── ...
-├── templates/
-│   └── ...
-├── pims/
-│   ├── __init__.py
-│   ├── settings/
-│   ├── urls.py
-│   └── wsgi.py
-├── requirements.txt
-└── manage.py
+    pims/
+    ├── accounts/
+    │   ├── __init__.py
+    │   ├── admin.py
+    │   ├── apps.py
+    │   ├── models.py
+    │   ├── tests.py
+    │   ├── urls.py
+    │   └── views.py
+    ├── appointments/
+    │   ├── __init__.py
+    │   ├── admin.py
+    │   ├── apps.py
+    │   ├── models.py
+    │   ├── tests.py
+    │   ├── urls.py
+    │   └── views.py
+    ├── prescriptions/
+    │   ├── __init__.py
+    │   ├── admin.py
+    │   ├── apps.py
+    │   ├── models.py
+    │   ├── tests.py
+    │   ├── urls.py
+    │   └── views.py
+    ├── reports/
+    │   ├── __init__.py
+    │   ├── admin.py
+    │   ├── apps.py
+    │   ├── models.py
+    │   ├── tests.py
+    │   ├── urls.py
+    │   └── views.py
+    ├── static/
+    │   └── ...
+    ├── templates/
+    │   └── ...
+    ├── pims/
+    │   ├── __init__.py
+    │   ├── settings/
+    │   ├── urls.py
+    │   └── wsgi.py
+    ├── requirements.txt
+    └── manage.py
 
