@@ -63,3 +63,31 @@ A Patient Information Management System typically includes several modules that 
     ├── requirements.txt
     └── manage.py
 
+Customize the Django admin site:
+   ├── accounts/
+    │   ├── __init__.py
+    │   ├── admin.py
+    │   ├── apps.py
+    │   ├── models.py
+    │   ├── tests.py
+    │   ├── urls.py
+    │   └── views.py
+#### Create a superuser account:
+
+    python manage.py createsuperuser
+#### Customize the Django admin site:
+    # admin.py
+    from django.contrib import admin
+    from django.contrib.auth.admin import UserAdmin
+    from django.contrib.auth.models import User
+
+    # Define a new UserAdmin class
+    class CustomUserAdmin(UserAdmin):
+        list_display = ('username', 'email', 'first_name', 'last_name', 'is_staff')
+        list_filter = ('is_staff', 'is_superuser', 'is_active', 'groups')
+        search_fields = ('username', 'email', 'first_name', 'last_name')
+        ordering = ('username',)
+
+    # Re-register UserAdmin
+    admin.site.unregister(User)
+    admin.site.register(User, CustomUserAdmin)
