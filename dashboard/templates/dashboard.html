@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Patients</h5>
+                        <p class="card-text">View and manage patients</p>
+                        <a href="{% url 'dashboard' %}" class="btn btn-primary">View</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Appointments</h5>
+                        <p class="card-text">View and manage appointments</p>
+                        <a href="{% url 'dashboard' %}" class="btn btn-primary">View</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Doctors</h5>
+                        <p class="card-text">View and manage doctors</p>
+                        <a href="{% url 'dashboard' %}" class="btn btn-primary">View</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
